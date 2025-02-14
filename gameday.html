@@ -10,12 +10,15 @@
 
     <header><h1>Gameday Experience</h1></header>
     <!-- Links to navigate between all 3 pages -->
-     <nav>
-        <a href="index.html">Home</a>
-        <a href="history.html">History</a>
-        <a href="gameday.html">Gameday</a>
+    
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="gameday.html">Gameday</a></li>
+        </ul>
     </nav>
-    <hr>
+   
                     <!-- Third Image Requirement -->
     <img 
         width="600" 
@@ -24,22 +27,43 @@
 
     <main>
         <section>    
-            <header><h2>The Kibbie Dome</h2></header>
-             <p> The Kibbie Dome in Moscow, Idaho is where the University of Idaho Vandals Football Team plays their home games. Built in 1974 with a capacity of 15,250 it was the smallest football stadium in FBS when the Vandals competed in that subdivison.
+            <div>
+                <header><h2 class="first-header">The Kibbie Dome</h2></header>
+                <p> The Kibbie Dome in Moscow, Idaho is where the University of Idaho Vandals Football Team plays their home games. Built in 1974 with a capacity of 15,250 it was the smallest football stadium in FBS when the Vandals competed in that subdivison.
                 This small enclosed football venue has a cult following thanks to the EA Sports NCAA Football 2014 video game and reputation of loud rowdy fans that can fill it with noise if the "Dome gets a Rockin." Games usually kickoff at 2pm Pacific time and tailgating
                 at the adjacent parking lot to the West begins at 9am.</p>
+            </div>
         </section>
                     <!-- Form Requirement -->
-            <header><h4>Whats your favorite Football Game Concessions item?</h4></header>
-                <form>
-                    <input type="text" name="firstname" placeholder="First Name"> <br>
-                    <input type="text" name="lastname" placeholder="Last Name"> <br><br>
-                    <input type="radio" name="Concessions Item" value="Beer"> Beer <br>
-                    <input type="radio" name="Concessions Item" value="Hot Dog"> Hot Dog <br>
-                    <input type="radio" name="Concessions Item" value="Pretzel"> Pretzel <br>
-                    <input type="radio" name="Concessions Item" value="Nachos"> Nachos <br>
-                    <input type="radio" name="Concessions Item" value="Soda"> Soda <br>
+            <header class="feature-parent"><h4>Whats your favorite Football Game Concessions item?</h4></header>
+                
+            <form class="concessionsform">
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name"><br>
+
+                    <div class="radio-group">
+                    <input type="radio" id="beer" name="Concessions Item" value="Beer"> 
+                    <label for="beer">Beer</label>
+                    </div>  
+                    <div class="radio-group">
+                    <input type="radio" id="hotdog" name="Concessions Item" value="Hot Dog">
+                    <label for="hotdog">Hot Dog</label>
+                    </div>
+                    <div class="radio-group">
+                    <input type="radio" id="pretzel" name="Concessions Item" value="Pretzel">
+                    <label for="pretzel">Pretzel</label>
+                    </div>
+                    <div class="radio-group">
+                    <input type="radio" id="nachos" name="Concessions Item" value="Nachos">
+                    <label for="nachos">Nachos</label>
+                    </div> 
+                    <div class="radio-group">
+                    <input type="radio" id="soda" name="Concessions Item" value="Soda">
+                    <label for="soda">Soda</label>
+                    </div>
+
                     <input type="submit" value="submit">
+
                 </form>
         
     </main>             
